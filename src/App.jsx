@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div className="App max-w-[1200px] mx-auto">
       <div className="header">
         <Header></Header>
       </div>

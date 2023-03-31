@@ -10,7 +10,7 @@ const Header = () => {
           </a>
         </div>
         <div className="avatar navbar-end">
-          <div className="w-20 rounded-full">
+          <div className="w-14 rounded-full">
             <img src="https://wallpaperaccess.com/full/4046703.jpg" alt="" />
           </div>
         </div>

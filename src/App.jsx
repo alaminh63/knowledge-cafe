@@ -1,16 +1,25 @@
 import { useState } from "react";
-import "./App.css";
+import Blog from "./components/Blogs/Blog";
+import Card from "./components/Card/Card";
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sitebar/Sidebar";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <button className="btn btn-active btn-primary">Button</button>
-      <button className="btn btn-active btn-secondary">Button</button>
-      <button className="btn btn-active btn-accent">Button</button>
-      <button className="btn btn-active btn-ghost">Button</button>
+      <div className="header">
+        <Header></Header>
+      </div>
+      <div className="main grid grid-cols-1 md:grid-cols-3">
+        <div className="card col-span-2">
+          <Blog></Blog>
+        </div>
+        <div className="blogs col-span-1">
+          <Sidebar></Sidebar>
+        </div>
+      </div>
     </div>
   );
 }

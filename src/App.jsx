@@ -2,6 +2,7 @@ import { useState } from "react";
 import Blog from "./components/Blogs/Blog";
 import Card from "./components/Card/Card";
 import Header from "./components/Header/Header";
+import QA from "./components/QA/QA";
 import Sidebar from "./components/Sitebar/Sidebar";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Sidebar readTime={readTime} bookMarkItems={bookMarkItems}></Sidebar>
         </div>
       </div>
+        <QA></QA>
     </div>
   );
 }

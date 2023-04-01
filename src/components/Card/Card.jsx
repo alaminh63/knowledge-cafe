@@ -11,7 +11,7 @@ const Card = (props) => {
     publishDate,
     readTime,
   } = props.card;
-
+  const addBookMark = props.addBookMark;
   const handleReadTime = props.handleReadTime;
   return (
     <div className="pl-8">
@@ -34,7 +34,7 @@ const Card = (props) => {
             </div>
             <div className="text-[20px] flex gap-1 md:gap-3 items-center">
               <p>{readTime} min read</p>
-              <button>
+              <button onClick={() => addBookMark(blogTitle)}>
                 <FontAwesomeIcon icon={faBookmark} />
               </button>
             </div>

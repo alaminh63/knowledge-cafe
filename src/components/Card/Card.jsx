@@ -24,12 +24,12 @@ const Card = (props) => {
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               <div className="avatar">
-                <div className="w-20 rounded-full">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full">
                   <img src={authorImg} alt="" />
                 </div>
               </div>
-              <div className="px-5">
-                <h2 className="card-title font-bold">{authorName}</h2>
+              <div className="px-5 flex-col justify-center">
+                <h2 className="font-bold sm:text-[15px] md:text-[20px]">{authorName}</h2>
                 <p>{publishDate}</p>
               </div>
             </div>
@@ -41,7 +41,7 @@ const Card = (props) => {
             </div>
           </div>
           <div>
-            <h1 className="text-[30px] font-bold">{blogTitle}</h1>
+            <h1 className="md:text-[30px] text-[22px] font-bold">{blogTitle}</h1>
           </div>
           <div>
             <h3>{note}</h3>

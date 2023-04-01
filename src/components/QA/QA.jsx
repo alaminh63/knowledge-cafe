@@ -2,7 +2,7 @@ import React from "react";
 
 const QA = () => {
   return (
-    <div>
+    <div className="mt-10">
       <h2 class="text-2xl font-bold text-center">Question And Answer</h2>
       <article class="border rounded-lg p-5 m-5">
         <h3 class="text-xl font-bold">
@@ -28,18 +28,20 @@ const QA = () => {
           initial state and returns two values (one is state, second is
           function).Then need to set initial vai in useState. useState provide a
           function. We are using this function we can set new value in state.
-          Then we can use state in corrent components
+          Then we can use state in current components.
         </p>
       </article>
       <article class="border rounded-lg p-5 m-5">
         <h3 class="text-xl font-bold">how to work useState in react?</h3>
         <p>
           <span class="font-bold">useEffect:</span> When we are working outside
-          from componets It's called side effect. Then need to re-render.
-          useEffect recive two pramiter first a function and second a
-          dependence. When need value changed then need to re-render. useEffect
-          help to re-render updated value basd on dependece value. useEffect
-          re-render when useEffect value was changed
+          from components It's called side effect.React's useEffect hook allows
+          us to run side effects in a functional component, such as fetching
+          data from an API,getting data from local storage. Then need to
+          re-render. useEffect receive two parameter first a function and second
+          a dependence. When need value changed then need to re-render.
+          useEffect help to re-render updated value based on dependence value.
+          useEffect re-render when useEffect value was changed.
         </p>
       </article>
       <article class="border rounded-lg p-5 m-5">
@@ -48,9 +50,9 @@ const QA = () => {
           <span class="font-bold">React:</span> React.js is a javascript
           library. React.js framework is an open-source JavaScript library.React
           js for front-end devlopments. React js does not work directly in the
-          browser's dom. It creates a separate virtual dom. React js first
-          changes the virtual town then Updates it in the browser dom. react js
-          tracks where the browser has changed and updates only that place.
+          browser's dom. React uses a virtual DOM to efficiently update the UI
+          and only re-renders components that have changed.thats why it works
+          fast and gets responsive easily.
         </p>
       </article>
     </div>

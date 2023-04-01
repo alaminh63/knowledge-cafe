@@ -10,6 +10,7 @@ const Card = (props) => {
     authorName,
     publishDate,
     readTime,
+    note
   } = props.card;
   const addBookMark = props.addBookMark;
   const handleReadTime = props.handleReadTime;
@@ -41,6 +42,9 @@ const Card = (props) => {
           </div>
           <div>
             <h1 className="text-[30px] font-bold">{blogTitle}</h1>
+          </div>
+          <div>
+            <h3>{note}</h3>
           </div>
           <div className="card-actions text-blue-700">
             <button onClick={() => handleReadTime(props.card)}>

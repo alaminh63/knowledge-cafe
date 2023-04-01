@@ -21,7 +21,7 @@ function App() {
             setBookMarkItems={setBookMarkItems}
           ></Blog>
         </div>
-        <div className="blogs col-span-1 pr-8">
+        <div className="blogs col-span-1 ml-8 md:w-[500px] md:pr-[80px]">
           <Sidebar readTime={readTime} bookMarkItems={bookMarkItems}></Sidebar>
         </div>
       </div>

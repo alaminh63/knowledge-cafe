@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div >
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <a href="/home" className="normal-case font-bold text-3xl">
             Knowledge Cafe
